@@ -1,0 +1,629 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "starsForSale",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getApproved",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_tokenId1",
+						"type": "uint256"
+					},
+					{
+						"name": "_tokenId2",
+						"type": "uint256"
+					}
+				],
+				"name": "exchangeStars",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenIdToStarInfo",
+				"outputs": [
+					{
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "buyStar",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "putStarUpForSale",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "tokenName",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "tokenSymbol",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "createStar",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "lookUptokenIdToStarInfo",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to1",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferStar",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "operator",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "approved",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"approve(address,uint256)": {
+					"details": "Approves another address to transfer the given token ID The zero address indicates there is no approved address. There can only be one approved address per token at a given time. Can only be called by the token owner or an approved operator.",
+					"params": {
+						"to": "address to be approved for the given token ID",
+						"tokenId": "uint256 ID of the token to be approved"
+					}
+				},
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address.",
+					"params": {
+						"owner": "address to query the balance of"
+					},
+					"return": "uint256 representing the amount owned by the passed address"
+				},
+				"getApproved(uint256)": {
+					"details": "Gets the approved address for a token ID, or zero if no address set Reverts if the token ID does not exist.",
+					"params": {
+						"tokenId": "uint256 ID of the token to query the approval of"
+					},
+					"return": "address currently approved for the given token ID"
+				},
+				"isApprovedForAll(address,address)": {
+					"details": "Tells whether an operator is approved by a given owner.",
+					"params": {
+						"operator": "operator address which you want to query the approval of",
+						"owner": "owner address which you want to query the approval of"
+					},
+					"return": "bool whether the given operator is approved by the given owner"
+				},
+				"ownerOf(uint256)": {
+					"details": "Gets the owner of the specified token ID.",
+					"params": {
+						"tokenId": "uint256 ID of the token to query the owner of"
+					},
+					"return": "address currently marked as the owner of the given token ID"
+				},
+				"safeTransferFrom(address,address,uint256)": {
+					"details": "Safely transfers the ownership of a given token ID to another address If the target address is a contract, it must implement `onERC721Received`, which is called upon a safe transfer, and return the magic value `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`; otherwise, the transfer is reverted. Requires the msg.sender to be the owner, approved, or operator",
+					"params": {
+						"from": "current owner of the token",
+						"to": "address to receive the ownership of the given token ID",
+						"tokenId": "uint256 ID of the token to be transferred"
+					}
+				},
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"details": "Safely transfers the ownership of a given token ID to another address If the target address is a contract, it must implement `onERC721Received`, which is called upon a safe transfer, and return the magic value `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`; otherwise, the transfer is reverted. Requires the msg.sender to be the owner, approved, or operator",
+					"params": {
+						"_data": "bytes data to send along with a safe transfer check",
+						"from": "current owner of the token",
+						"to": "address to receive the ownership of the given token ID",
+						"tokenId": "uint256 ID of the token to be transferred"
+					}
+				},
+				"setApprovalForAll(address,bool)": {
+					"details": "Sets or unsets the approval of a given operator An operator is allowed to transfer all tokens of the sender on their behalf.",
+					"params": {
+						"approved": "representing the status of the approval to be set",
+						"to": "operator address to set the approval"
+					}
+				},
+				"supportsInterface(bytes4)": {
+					"details": "See `IERC165.supportsInterface`.     * Time complexity O(1), guaranteed to always use less than 30 000 gas."
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "Transfers the ownership of a given token ID to another address. Usage of this method is discouraged, use `safeTransferFrom` whenever possible. Requires the msg.sender to be the owner, approved, or operator.",
+					"params": {
+						"from": "current owner of the token",
+						"to": "address to receive the ownership of the given token ID",
+						"tokenId": "uint256 ID of the token to be transferred"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/contracts/StarNotary.sol": "StarNotary"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/contracts/StarNotary.sol": {
+			"keccak256": "0x78f5f92faf0dbbba7a3dd2f4a90372a08f4138e308a9c2774d3050959ba34dbf",
+			"urls": [
+				"bzzr://9e80138646b04af387b77cae509d6c7f5c52a3b5ed024abdb556165313df3a6a"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/drafts/Counters.sol": {
+			"keccak256": "0x5eb69360d3441ab2ee799bd7c007cccbffb0896f12b2dfe1456193e2aa180a11",
+			"urls": [
+				"bzzr://ecd0352164978c418c8f5b0080c972b65e4b07f6afc593fb7cdd856185a458ea"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/introspection/ERC165.sol": {
+			"keccak256": "0xac2eacd7e7762e275442f28f21d821544df5aae2ed7698af13be8c41b7005e2e",
+			"urls": [
+				"bzzr://43e901f6f210568ebc1d3591da3ce6a9d10796b854767a9c6e3da10305a8a332"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/introspection/IERC165.sol": {
+			"keccak256": "0x661553e43d7c4fbb2de504e5999fd5c104d367488350ed5bf023031bd1ba5ac5",
+			"urls": [
+				"bzzr://fc2ba15143ce3a00268ecd15fc98eb2469b18bfe27a64bbab0ac6446f161c739"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+			"keccak256": "0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690",
+			"urls": [
+				"bzzr://1604f5b6d6e916c154efd8c6720cda069e5ba32dfa0a9dedf2b42e5b02d07f89"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721.sol": {
+			"keccak256": "0xf151df411bbf4eaef1fc8e8480cd10c2cd985f1a36517e63981517610213efc1",
+			"urls": [
+				"bzzr://9bca20c0c1208be8f31fc7a73faccd2fca4c5f84dc0a432ae2e066970551db34"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721Enumerable.sol": {
+			"keccak256": "0xb42cb5a7471d98114af8f7050e7d08dfd543f432713a8aee72a45ce9485f5bed",
+			"urls": [
+				"bzzr://b0d4d8eb319d67dc4b5def23d48a84806dcd6492782c176309da449903e58766"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721Full.sol": {
+			"keccak256": "0x908d0d6fd8d30cffb1fe9fce1f7db6802cb885fbe88d2f170539e8dcc6afa946",
+			"urls": [
+				"bzzr://691f4df66b5aa95410d8205f7afcd90e5f066d13513392ab797b2c9ce2f4f669"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721Metadata.sol": {
+			"keccak256": "0xe5e28b1a405164faa98f8ecd8ed2b00907b89e3d58b2b2bb8ac8b12bc5714489",
+			"urls": [
+				"bzzr://5a804c3710e9eca0a111db4536b0c5d23bf4a66734a9856f3df2992900ed8f28"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721.sol": {
+			"keccak256": "0xce48937a8007c580b8e2e35705738c922dd17540de89ebee6df06d2917a3f9fc",
+			"urls": [
+				"bzzr://de494d3843e2c151aa108782382720b5d9f4531f0aa620a4244ca12fc1f8a780"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Enumerable.sol": {
+			"keccak256": "0x5c573acd6c7b98d71f3c1c44d63dc17400b0fd7b26a52c9fded43b8b533dc4ec",
+			"urls": [
+				"bzzr://8f483b76debd9f5948c445dcb83dac4c8b4881218776a6cd43ca07bd62f647de"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol": {
+			"keccak256": "0x2b2b99dc7fe8fcd1f9427d00822b99cbc683dc21f5dd7532bd7e2281fd2c2ca2",
+			"urls": [
+				"bzzr://b89c69b072072e7fa1c8da973f82c7b28a64fb6bdc1e47626fedc89050ae783c"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0xadbfb7028fb0f851dc848a48b9e54e7c89ffd2c2edc12fa4ba9bb383dfaa83d9",
+			"urls": [
+				"bzzr://2466b6491600969dd9ffdeb0b705e7cecc38418aa215cec64b2481273bba9076"
+			]
+		},
+		"BC nanodegree/Lesson 2 - Ethereum/Solidity/SolidityCourseProject/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code-main/node_modules/openzeppelin-solidity/contracts/utils/Address.sol": {
+			"keccak256": "0xf3358e5819ca73357abd6c90bdfffd0474af54364897f6b3e3234c4b71fbe9a1",
+			"urls": [
+				"bzzr://f7f6da60a184233fd666ac44e6fb2bd51ca6ebdc4867a310d368049aa4e62786"
+			]
+		}
+	},
+	"version": 1
+}
