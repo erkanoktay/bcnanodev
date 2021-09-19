@@ -1,5 +1,5 @@
 const HDWallet = require("@truffle/hdwallet-provider");
-const mnemonic = "maze neglect toddler fee harvest awake kiss kiwi possible adjust split ladder";
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
